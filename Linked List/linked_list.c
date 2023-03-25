@@ -221,6 +221,90 @@ void set(NodePtr **head, int index, int value) {
     printf("Updated with new value.\n");
 }
 
+// function to find the minimum element in the linked list 
+int getMin(NodePtr *head) {
+    int min = INT_MAX; 
+    while(head) {
+        if(head->data < min) { 
+            min = head->data;
+        }
+        head = head->next;
+    }
+    return min;
+}
+
+// function to find the maximum element in the linked list 
+int getMax(NodePtr *head) {
+    int max = INT_MIN; 
+    while(head) {
+        if(head->data > max) { 
+            max = head->data;
+        }
+        head = head->next;
+    }
+    return max;
+}
+
+// creates a linked list taking user input
+NodePtr* createList() {
+    NodePtr *head = NULL;
+    printf("Do you want to insert a node?\nEnter Y for yes and N for No.\n");
+    while(1) {
+        char ch;
+        scanf("%c", &ch);
+        if(ch == 'Y' || ch == 'y') {
+            printf("Enter the data of the node.\n");
+            int data;
+            scanf("%d", &data);
+            insert_begin(&head, data);
+            continue;
+        }
+        if(ch == 'N' || ch == 'n') break;
+        printf("Do you want to insert a node?\nEnter Y for yes and N for No.\n");
+    }
+    return head;
+}
+
+// function to concatanate two SLLs
+NodePtr* concat(NodePtr *head1, NodePtr *head2) {
+    if(!head1 && !head2) {
+        printf("Both lists are empty.\n");
+        return NULL;
+    }
+    
+    else if(!head1) return head2;
+    else if(!head2) return head1;
+    
+    else {
+        NodePtr *tmp = head1;
+        while(tmp->next) {
+        tmp = tmp->next;
+    }
+    tmp->next = head2;
+    return head1;
+    }
+}
+
+// function to reverse SLL
+void reverse(NodePtr **head) {
+    if(!head || !(*head)) {
+        printf("The tree is empty.\n");
+        return;
+    }
+    
+    NodePtr *curr = *head;
+    NodePtr *prev = NULL, *next = NULL;
+    
+    while(curr) {
+        next = curr->next;
+        curr->next = prev;
+        
+        prev = curr;
+        curr = next;
+    }
+    *head = prev;
+}
+
 // Looks for the data in a list
 bool search_list(NodePtr *head, int data) {
     // base case
