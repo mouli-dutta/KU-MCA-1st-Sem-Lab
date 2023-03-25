@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1671425903 source:c:\users\mouli\documents\c projects\ku projects\stack\dynamicstack\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1671425252 c:\users\mouli\documents\c projects\ku projects\stack\dynamicstack\stack.h
+
+1671425252 source:c:\users\mouli\documents\c projects\ku projects\stack\dynamicstack\stack.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
