@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1671428052 source:c:\users\mouli\documents\c projects\ku projects\linked list\linkedlist\main.c
+	"LinkedListFunctions.h"
+
+1671428052 c:\users\mouli\documents\c projects\ku projects\linked list\linkedlist\linkedlistfunctions.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1670476364 c:\users\mouli\documents\c projects\ku projects\linked list\linkedlist\structnode.h
+
+1671428052 source:c:\users\mouli\documents\c projects\ku projects\linked list\linkedlist\linked_list.c
+	"LinkedListFunctions.h"
+
