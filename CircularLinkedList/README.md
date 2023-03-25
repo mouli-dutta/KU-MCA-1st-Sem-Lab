@@ -87,7 +87,7 @@ Step 6:	ASSIGN PRE_POINTER → NEXT = HEAD  <br/>
 Step 7:	REMOVE OR FREE POINTER <br/>
 Step 8:	EXIT <br/>
 
-#### 3. Algorithm for delete from given index.	
+#### 3. Algorithm for deletion from given index.	
 
 Step 1: MAKE A TWO NEW NODE U AND V  <br/>
 Step 2: SET VALUE OF W = 0 <br/>
