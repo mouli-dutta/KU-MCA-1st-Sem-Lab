@@ -1,4 +1,4 @@
-#KU MCA 1st Sem Lab assignments
+# KU MCA 1st Sem Lab assignments
 ## 112 - Data and File Structure Lab
 ### This repo contains the assignments written in C language done in the first semester of MCA course of Kalyani University.
 
