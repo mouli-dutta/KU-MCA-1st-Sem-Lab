@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <limits.h>
 
 typedef struct Node {
     int data;
@@ -40,6 +41,21 @@ void delete_at(NodePtr**, int);
 int get(NodePtr*, int);
 
 void set(NodePtr**, int, int);
+
+// function to find the minimum element in the linked list 
+int getMin(NodePtr*);
+
+// function to find the maximum element in the linked list 
+int getMax(NodePtr*);
+
+// creates a linked list taking user input
+NodePtr* createList();
+
+// function to concatanate two SLLs
+NodePtr* concat(NodePtr*, NodePtr*);
+
+// function to reverse SLL
+void reverse(NodePtr **);
 
 // search an element in list
 bool search_list(NodePtr*, int);

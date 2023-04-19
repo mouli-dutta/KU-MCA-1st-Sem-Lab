@@ -33,7 +33,12 @@ int main() {
                          "\t11) Sort.\n",
                          "\t12) Search.\n",
                          "\t13) Display.\n",
-                         "\t14) Exit.\n\n"
+                         "\t14) Find the minimum node of the SLL.\n",
+                         "\t15) Find the maximum node of the SLL.\n",
+                         "\t16) Create a List.\n",
+                         "\t17) Reverse the list.\n",
+                         "\t18) Concat/Merge two lists.\n",
+                         "\t19) Exit.\n\n"
                       };
 
     int len = ARRAY_LENGTH(menu_arr);
@@ -100,8 +105,28 @@ int main() {
             case 13:
                 display(head);
             break;
-
+                
             case 14:
+                printf("Data of the minimum node is: %d\n", getMin(head));                
+            break;
+                
+            case 15:
+                printf("Data of the maximum node is: %d\n", getMax(head));
+            break;
+                
+            case 16:
+                head = createList();
+            break;
+                
+            case 17:
+                reverse(&head);
+            break;
+                
+            case 18:
+                head = concat(head, createList());
+            break;              
+
+            case 19:
                 printf("Terminating the process.\n");
                 exit(0);
             break;
